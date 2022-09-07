@@ -1,0 +1,17 @@
+body {
+    text-align: center;
+    background-color: #F1EFDC;
+}
+
+h1 {
+    font-family: "Courier New";
+    font-size: 6vh;
+    color: #42032C;
+}
+
+#container {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
