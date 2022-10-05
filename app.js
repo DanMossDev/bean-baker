@@ -217,7 +217,9 @@ class BeanParticle {
 
 function loadSave(upgrades) {
   // Load saved beans
-  beanNum += parseInt(localStorage.getItem("savedBeans"));
+  if (localStorage.getItem("savedBeans")) {
+    beanNum = parseInt(localStorage.getItem("savedBeans"));
+  }
 
   // Load saved upgrades
   upgrades.forEach((upgrade) => {
